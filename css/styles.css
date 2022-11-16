@@ -62,7 +62,7 @@ p {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
@@ -79,7 +79,7 @@ p {
     line-height: 1.11;
     letter-spacing: 0.03em;
     text-decoration: none;
-
+    margin-right: 93px;
 
 
 }
@@ -111,7 +111,7 @@ ul {
     display: block;
     padding-top: 32px;
     padding-left: 32px;
-    background-color: tomato;
+    
 }
 
 .site-nav:hover,
@@ -126,7 +126,6 @@ ul {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
     
 }
 
@@ -186,6 +185,7 @@ margin-left: 50px ;
     font-size: 16px;
     line-height: 1.8;
     border: none;
+    padding: 10px 32px 10px 32px;
 }
 
 .site-button:hover,
@@ -335,9 +335,14 @@ padding-left: 40px;
 }
 
 
-.webhead {
+.hero {
     display: flex;
-   
+    align-items: center;
+}
+
+.webhead{
+    display: flex;
+
 }
 
 .webhead .item:not(:last-child) {
@@ -347,6 +352,7 @@ padding-left: 40px;
 .item .link {
     align-items: center;
 }
+
 
 
 
@@ -360,8 +366,22 @@ padding-left: 40px;
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
+    padding: 6px 22px 6px 22px;
 }
 
+.knopki {
+    display: flex;
+        margin: 100px 0 50px 0;
+        justify-content: center;
+}
+
+.knopka {
+    margin-right: 8px;
+}
+
+.knopki .knopka :not(:last-child) {
+    margin-right: 8px;
+}
 
 .button-filter:hover,
 .button-filter:focus,
@@ -372,14 +392,30 @@ padding-left: 40px;
 }
 
 
+
 .button-filter {
     cursor: pointer;
 }
 
+.all {
+    
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 30px;
+ list-style: none;
+ margin: 0;
+ padding: 0;
 
+}
 .all li {
     color: var(--text-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
+
 
 .all h3 {
     text-decoration: none;
@@ -388,6 +424,11 @@ padding-left: 40px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primari-text-color);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
 }
 
 .all p {
@@ -397,6 +438,7 @@ padding-left: 40px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin: 4px 24px 20px 24px;
 }
 
 
