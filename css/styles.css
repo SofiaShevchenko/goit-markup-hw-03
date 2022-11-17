@@ -79,7 +79,7 @@ section {
     line-height: 1.11;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-right: 93px;
+    
 
 
 }
@@ -111,8 +111,25 @@ ul {
     display: block;
     padding-top: 32px;
     padding-left: 32px;
+   
     
 }
+
+.site-navstudia {
+        color: var(--primari-text-color);
+        text-decoration: none;
+        display: block;
+        padding-top: 32px;
+        padding-left: 32px;
+       margin-left: 93px;
+
+    }
+
+
+.site-navstudia:hover,
+.site-navstudia :focus {
+        color: var(--accent-color);
+    }
 
 .site-nav:hover,
 .site-nav:focus {
@@ -126,7 +143,7 @@ ul {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    
+    margin-left: 93px;
 }
 
 .main-cont {
@@ -163,6 +180,8 @@ margin-left: 50px ;
 .site-sec {
     background-color: var(--shadow-grey) ;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .site-head {
@@ -186,6 +205,8 @@ margin-left: 50px ;
     line-height: 1.8;
     border: none;
     padding: 10px 32px 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .site-button:hover,
@@ -200,14 +221,15 @@ margin-left: 50px ;
 
 .advantages-list {
     display: flex;
-
+    margin: -30px;
+    
 }
 
 .info-list {
     margin-right: 30px;
     align-items: center;
     padding-left: 0px ;
-   
+  max-width: 270px;
 }
 
 .info {
@@ -216,7 +238,7 @@ margin-left: 50px ;
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-    padding-top: 94px;
+   
 
 }
 
@@ -261,14 +283,20 @@ gap: 30px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
+    
 }
 
 .team-work {
     display: flex;
-    padding-bottom: 94px;
+   
     
 }
+
+.teamcard {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
 
 .team-section {
         background-color: var(--shadow-white);
@@ -301,12 +329,12 @@ gap: 30px;
 
 .foot {
     background-color: var(--shadow-grey);
-    
+    padding-top: 60px;
 }
 
 .foot .logo-link{
     display: inline-block;
-    padding-top: 60px;
+    
     margin-bottom: 20px;
     
 }
@@ -327,7 +355,7 @@ gap: 30px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     margin-top: 9px;
-    padding-bottom: 60px;
+    
 }
 
  
@@ -355,7 +383,11 @@ gap: 30px;
 
 .webhead{
     display: flex;
+ 
+}
 
+.headport {
+    border: 1px solid #ECECEC;
 }
 
 .webhead .item:not(:last-child) {
@@ -386,10 +418,13 @@ gap: 30px;
     display: flex;
         margin-bottom:50px;
         justify-content: center;
+       
 }
 
 .knopka {
     margin-right: 8px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
 
 .knopki .knopka :not(:last-child) {
@@ -419,14 +454,17 @@ gap: 30px;
  list-style: none;
  margin: 0;
  padding: 0;
-padding-bottom: 94px;
+
+ 
+
 }
+
 .all li {
 
     margin: 0;
     padding: 0;
-   
-    
+    flex-basis: calc((100% - 60px) / 3);
+  
 }
 
 
@@ -457,8 +495,15 @@ padding-bottom: 94px;
 
 .all li {
     background-color: var(--text-white);
+    
 }
 
 .all a {
     text-decoration: none;
+    
+}
+
+.kart {
+    border: 1px solid #EEEEEE;
+    
 }
