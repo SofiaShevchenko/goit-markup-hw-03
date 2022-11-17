@@ -34,6 +34,7 @@ body {
     color: var(--primari-text-color);
 }
 
+ul,
 h1,
 h2,
 h3,
@@ -43,7 +44,7 @@ p {
 }
 
 
-.ul {
+ul {
     margin: 0;
     padding: 0;
     list-style: none; }
@@ -54,7 +55,7 @@ p {
     list-style: 0;
 }
 
-.section.no-padding {
+section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -62,11 +63,10 @@ p {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    align-items: center;
-    outline: 1px solid tomato;
+    
 }
 
 
@@ -205,9 +205,11 @@ margin-left: 50px ;
 
 .info-list {
     margin-right: 30px;
-        align-items: center;
-      
+    align-items: center;
+    padding-left: 0px ;
+   
 }
+
 .info {
     font-weight: 700;
     font-size: 14px;
@@ -236,17 +238,20 @@ margin-left: 50px ;
     letter-spacing: 0.03em;
     margin-top: 118px;
     margin-bottom: 50px;
+
 }
+
 
 .cards {
 display: flex;
 padding-left: 40px;
+margin-left: -37px;
+gap: 30px;
 }
 
 .cards li {
-    margin-left: 30px;
     align-items: center;
-    
+   
 }
 
 .team {
@@ -260,10 +265,13 @@ padding-left: 40px;
 }
 
 .team-work {
-    background-color: var(--shadow-white);
     display: flex;
     padding-bottom: 94px;
     
+}
+
+.team-section {
+        background-color: var(--shadow-white);
 }
 
 .team-work li {
@@ -293,13 +301,14 @@ padding-left: 40px;
 
 .foot {
     background-color: var(--shadow-grey);
-
+    
 }
 
 .foot .logo-link{
     display: inline-block;
     padding-top: 60px;
     margin-bottom: 20px;
+    
 }
 
 .logo-footer {
@@ -317,8 +326,11 @@ padding-left: 40px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-top: 9px;
+    padding-bottom: 60px;
 }
 
+ 
 .contact a {
     text-decoration: none;
     font-weight: 400;
@@ -327,6 +339,7 @@ padding-left: 40px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
+   
 }
 
 .contact li :hover,
@@ -371,7 +384,7 @@ padding-left: 40px;
 
 .knopki {
     display: flex;
-        margin: 100px 0 50px 0;
+        margin-bottom:50px;
         justify-content: center;
 }
 
@@ -406,13 +419,13 @@ padding-left: 40px;
  list-style: none;
  margin: 0;
  padding: 0;
-
+padding-bottom: 94px;
 }
 .all li {
-    color: var(--text-white);
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
     
 }
 
