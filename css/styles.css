@@ -163,10 +163,28 @@ ul {
     margin-left: auto;
 }
 
+.envelope-item {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  
+}
+
+
+.icon-vector {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    
+}
+
 .tel a {
     color: var(--title-text-color);
     text-decoration: none;
-
+    display: flex;
+    align-items: center;
 }
 
 .tel .item + .item {
@@ -187,11 +205,7 @@ margin-left: 50px ;
 }
 
 .site-sec {
-    background-image: linear-gradient 
-    (to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-            ),
+    background-image:
 
     url(../images/people.jpg);
 
@@ -200,10 +214,11 @@ margin-left: 50px ;
     background-size: cover;
     text-align: center;
     max-width: 1600px;
-    height: 600px;
     margin-right: auto;
     margin-left: auto;
-  
+  background-image: linear-gradient (to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4));
 
 }
 
@@ -250,10 +265,23 @@ margin-left: 50px ;
 
 .info-list {
     margin-right: 30px;
-    align-items: center;
-    padding-left: 0px ;
-  max-width: 270px;
+    flex-basis: auto;
 }
+
+.info-list::before{
+content:"";
+display: block;
+height: 120px;
+width: 270px;
+background: #F5F4FA;
+border-radius: 4px;
+background-size: contain;
+background-position: center;
+}
+
+.astro-navt::before {
+    background-image: url("../images/icons.svg.svg#icon-astronaut-1");
+    }
 
 .info {
     font-weight: 700;
@@ -353,6 +381,7 @@ gap: 30px;
 .foot {
     background-color: var(--shadow-grey);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .foot .logo-link{
@@ -377,10 +406,13 @@ gap: 30px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-top: 9px;
+    
     
 }
-
+ .email {
+    margin-top: 9px;
+    margin-bottom: 9px;
+ }
  
 .contact a {
     text-decoration: none;
@@ -441,7 +473,7 @@ gap: 30px;
         display: flex;
         margin-bottom:50px;
         justify-content: center;
-        border-radius: 4px;
+  
        
 }
 
@@ -467,6 +499,10 @@ gap: 30px;
 
 .button-filter {
     cursor: pointer;
+    border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
 }
 
 .all {
@@ -476,8 +512,6 @@ gap: 30px;
  align-items: center;
  gap: 30px;
  list-style: none;
- margin: 0;
- padding: 0;
 
  
 
@@ -485,8 +519,6 @@ gap: 30px;
 
 .all li {
 
-    margin: 0;
-    padding: 0;
     flex-basis: calc((100% - 60px) / 3);
   
 }
