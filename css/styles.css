@@ -126,9 +126,13 @@ ul {
         display: block;
         padding-top: 32px;
         padding-left: 32px;
-       margin-left: 93px;
+      
 
     }
+
+.webhead {
+    margin-left: 93px;
+}
 
 
 .site-navstudia:hover,
@@ -263,25 +267,27 @@ margin-left: 50px ;
     
 }
 
+.astro-div {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    display: flex;
+}
+
 .info-list {
-    margin-right: 30px;
+    
     flex-basis: calc((100% - 60px) / 4); 
 }
 
-.info-list::before{
-content:"";
-display: block;
-height: 120px;
-width: 270px;
-background: #F5F4FA;
-border-radius: 4px;
-background-size: contain;
-background-position: center;
+.info-list:not(:last-child) {
+    margin-right: 30px;
 }
 
-.astro-navt::before {
-    background-image: url("../images/icons.svg.svg#icon-astronaut-1");
-    }
+
 
 .info {
     font-weight: 700;
@@ -309,7 +315,6 @@ background-position: center;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 118px;
     margin-bottom: 50px;
 
 }
@@ -327,6 +332,11 @@ gap: 30px;
     align-items: center;
    
 }
+
+.team-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
 
 .team {
     margin-bottom: 50px;
@@ -368,9 +378,7 @@ gap: 30px;
     fill: currentColor;
 }
 
-.team-soc-items:not(:last-child) {
-    margin-right: 10px;
-}
+
 
 .team-soc-link {
     width: 100%;
@@ -395,6 +403,10 @@ gap: 30px;
 
 .team-work li {
     background-color: var(--text-white);
+    
+}
+
+.team-work li:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -461,8 +473,19 @@ gap: 30px;
         border-radius: 4px;
         background-color: #FFFFFF;
         align-items: center;
+        color: #AFB1B8;
         
 }
+
+.clients-link:hover {
+border-color: #2196F3;
+color: #2196f3;
+}
+
+.clients-icons {
+    fill: currentColor;
+}
+
 
 .foot {
     background-color: var(--shadow-grey);
@@ -495,6 +518,60 @@ gap: 30px;
     
     
 }
+
+.add-h {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 75px;
+}
+
+.foot-soc-items {
+    width: 44px;
+    height: 44px;
+
+}
+
+.foot-ul {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+.foot-soc-link:hover {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.foot-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgba(255, 255, 255, 0.1);
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.foot-soc-icons {
+    fill: currentColor;
+}
+
+.foot-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
 .email {
     margin-top: 9px;
     margin-bottom: 9px;
@@ -605,6 +682,11 @@ gap: 30px;
 
     flex-basis: calc((100% - 60px) / 3);
   
+}
+
+.all li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 
