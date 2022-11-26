@@ -322,8 +322,6 @@ margin-left: 50px ;
 
 .cards {
 display: flex;
-padding-left: 40px;
-margin-left: -37px;
 gap: 30px;
 
 }
@@ -358,6 +356,7 @@ gap: 30px;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+    
 }
 
 .team-soc-items{
@@ -376,6 +375,7 @@ gap: 30px;
 
 .team-soc-icons {
     fill: currentColor;
+    
 }
 
 
